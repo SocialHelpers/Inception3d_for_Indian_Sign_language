@@ -3,6 +3,7 @@ We have implemented inception 3d architecture for Indian Sign Language. We have 
 
 # Dataset
 The augumented dataset is available at https://drive.google.com/open?id=1XsDchIAjwSi12jx6PyimRebjexCcapWa
+
 The original dataset is available at https://drive.google.com/open?id=1pgX6aiapIedZbjd6tFuBvVrJj53oNusk
 
 # Contributors :
