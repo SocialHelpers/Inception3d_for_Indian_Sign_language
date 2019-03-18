@@ -6,7 +6,7 @@ The augumented dataset is available at https://drive.google.com/open?id=1XsDchIA
 The original dataset is available at https://drive.google.com/open?id=1pgX6aiapIedZbjd6tFuBvVrJj53oNusk
 
 # Contributors :
-1. Rochak Agrawal
-2. Swanand Katdare
-3. Naman Jain
-4. Pranit Deshpande
+1. Pranit Deshpande
+2. Naman Jain
+3. Rochak Agrawal
+4. Swanand Katdare
