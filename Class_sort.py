@@ -25,7 +25,7 @@ def folders2classes(sFolderPath):
         id = item.split(".")[0]
         class_id=id[-6:-2]
         if class_id in pi_videos:
-            sVideoName = str(cnt).zfill(4)+".mp4"
+            sVideoName = str(cnt).zfill(5)+".mp4"
             sClassSavePath=os.path.join(sClassPath,os.path.join(class_id,sVideoName))
             print("Adding video to : ",sClassSavePath)
             shutil.copy(src=item,dst=sClassSavePath)
