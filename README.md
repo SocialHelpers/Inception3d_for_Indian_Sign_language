@@ -1,7 +1,7 @@
-# Inception3d for Indian Sign Language
+# Inception3d for Indian Sign Language :
 We have implemented inception 3d architecture for Indian Sign Language. We have also created our own dataset for the same.
 
-# Dataset
+# Dataset :
 The augumented dataset is available at https://drive.google.com/open?id=1XsDchIAjwSi12jx6PyimRebjexCcapWa  
 The original dataset is available at https://drive.google.com/open?id=1pgX6aiapIedZbjd6tFuBvVrJj53oNusk
 
@@ -9,4 +9,4 @@ The original dataset is available at https://drive.google.com/open?id=1pgX6aiapI
 1. Pranit Deshpande
 2. Naman Jain
 3. Rochak Agrawal
-4. Swanand Katdare
+4. Swanand Katdare 
