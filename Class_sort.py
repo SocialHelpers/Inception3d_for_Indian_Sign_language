@@ -1,8 +1,16 @@
+"""
+This script is used for sorting the data-set class-wise.
+"""
 import os
 import shutil
 from imutils import paths
 
 def create_folders(sPath):
+    """
+    Creates the required folders
+    :param sPath: Base path of the location where folders are to be created.
+    :return: None
+    """
     cnt = 1
     os.mkdir("Classes")
     ClassPath = os.path.join(sPath,"Classes")
@@ -16,9 +24,14 @@ def create_folders(sPath):
     os.chdir(sPath)
 
 def folders2classes(sFolderPath):
+    """
+    Move the videos from original folders to class folders.
+    :param sFolderPath: Base folder where the original and class folders are present.
+    :return: None
+    """
     sClassPath = os.path.join(sFolderPath,"Classes")
     pi_videos=os.listdir(sClassPath)
-    li_videos=paths.list_files("Augmented_FinalDataset")
+    li_videos=paths.list_files("Dataset\Augmented_FinalDataset")
     cnt=0
     for item in li_videos:
         cnt += 1
