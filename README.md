@@ -5,6 +5,10 @@ We have implemented inception 3d architecture for Indian Sign Language. We have 
 The augumented dataset is available at https://drive.google.com/open?id=1XsDchIAjwSi12jx6PyimRebjexCcapWa  
 The original dataset is available at https://drive.google.com/open?id=1pgX6aiapIedZbjd6tFuBvVrJj53oNusk
 
+# Things to do :
+1. Script for result analysis.<br>
+2. Top 20 easiest and hard classes to identify based on accuracy score.
+
 # Contributors :
 1. Pranit Deshpande
 2. Naman Jain
