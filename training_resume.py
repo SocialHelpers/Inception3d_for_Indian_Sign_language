@@ -113,9 +113,12 @@ def train_I3D_oflow_end2end():
                                                 save_weights_only=False, save_best_only=False)
     cpAllBest = keras.callbacks.ModelCheckpoint(filepath=sModelDir + "/" + sLog + "-entire-best.h5", verbose=1,
                                                 save_best_only=False, save_weights_only=False)
+    cbTensorBoard = keras.callbacks.TensorBoard(log_dir="logs", histogram_freq=1, update_freq='batch',
+                                                write_graph=True, write_images=True, batch_size=32)
+    callbacks1 = [cpTopLast, cpTopBest, cbTensorBoard]
 
-    callbacks1 = [cpTopLast, cpTopBest]
-    callbacks2 = [cpAllBest, cpAllLast]
+    #callbacks2 = [cpAllBest, cpAllLast, cbTensorBoard]
+
     # Fit top layers
     print("Fit I3D top layers with generator: %s" % (diTrainTop))
     optimizer = keras.optimizers.Adam(lr=diTrainTop["fLearn"], decay=1e-6)
