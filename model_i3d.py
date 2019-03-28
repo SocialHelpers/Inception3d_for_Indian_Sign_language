@@ -8,16 +8,10 @@ https://arxiv.org/abs/1705.07750v1
 
 from __future__ import print_function
 from __future__ import absolute_import
-
-import warnings
-
 import os
-import numpy as np
-
 from keras.models import Model, load_model
 from keras import layers
 from keras.layers import Activation
-from keras.layers import Dense
 from keras.layers import Input
 from keras.layers import BatchNormalization
 from keras.layers import Conv3D
@@ -26,10 +20,6 @@ from keras.layers import AveragePooling3D
 from keras.layers import Dropout
 from keras.layers import Reshape
 from keras.layers import Lambda
-from keras.layers import GlobalAveragePooling3D
-
-from keras.engine.topology import get_source_inputs
-from keras.utils import layer_utils
 from keras.utils.data_utils import get_file
 from keras import backend as K
 
@@ -151,12 +141,12 @@ def Inception_Inflated3d(include_top=True,
     # path to pretrained models with top (classification layer)
     WEIGHTS_PATH = {
         'flow_imagenet_and_kinetics': 'https://github.com/dlpbc/keras-kinetics-i3d/releases/download/v0.2/flow_inception_i3d_imagenet_and_kinetics_tf_dim_ordering_tf_kernels.h5'
-        }
+    }
 
     # path to pretrained models with no top (no classification layer)
     WEIGHTS_PATH_NO_TOP = {
         'flow_imagenet_and_kinetics': 'https://github.com/dlpbc/keras-kinetics-i3d/releases/download/v0.2/flow_inception_i3d_imagenet_and_kinetics_tf_dim_ordering_tf_kernels_no_top.h5'
-        }
+    }
 
     if not (weights in WEIGHTS_NAME or weights is None or os.path.exists(weights)):
         raise ValueError('The `weights` argument should be either '

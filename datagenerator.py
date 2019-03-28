@@ -2,16 +2,11 @@
 This script is used for generating data for keras's model.fir_generator.
 It is also used to read the class.csv file for loading the data classes.
 """
-import glob
 import os
-import sys
-
 import numpy as np
 import pandas as pd
-
 from sklearn.preprocessing import LabelEncoder
 import keras
-
 from framesandoflow import files2frames, images_normalize
 
 

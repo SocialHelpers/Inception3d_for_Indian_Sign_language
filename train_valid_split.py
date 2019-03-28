@@ -2,7 +2,6 @@
 This script is used for splitting the entire data-set into training and validation parts.
 """
 import os
-from imutils import paths
 from random import shuffle
 
 homedir = os.getcwd()

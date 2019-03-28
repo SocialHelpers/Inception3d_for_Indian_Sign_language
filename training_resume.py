@@ -2,18 +2,12 @@
 This script is used for resuming the training of model after changing the hyper parameters.
 """
 import os
-import glob
 import time
-import sys
-
 import numpy as np
-import pandas as pd
 import keras
 from keras import backend as K
 from keras import models
-
 from datagenerator import VideoClasses, FramesGenerator
-from model_i3d import Inception_Inflated3d, add_i3d_top
 
 
 def layers_freeze(keModel):
