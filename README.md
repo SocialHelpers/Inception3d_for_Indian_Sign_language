@@ -1,6 +1,6 @@
 # Things to do :
-1. Script for result analysis.<br>
-2. Top 20 easiest and hard classes to identify based on accuracy score.
+1. ~Script for result analysis.<br>~
+2. ~Top 20 easiest and hard classes to identify based on accuracy score.~
 
 # Inception3d for Indian Sign Language :
 We have implemented inception 3d architecture for Indian Sign Language. We have also created our own dataset for the same.
