@@ -1,5 +1,5 @@
 imutils==0.5.2
-opencv_python==3.4.1.15
+opencv_python==4.2.0.32
 numpy==1.16.0
 Keras==2.2.4
 pandas==0.24.0
